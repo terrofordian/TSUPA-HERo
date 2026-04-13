@@ -1620,3 +1620,440 @@ body {
         aspect-ratio: 4/3;
     }
 }
+/* ============================================
+   TSUPA HERO PORTFOLIO - INTERESTS STYLESHEET
+   ============================================ */
+
+/* CSS Variables for Color Theme */
+:root {
+    --header-color: #2c3e50;
+    --nav-color: #34495e;
+    --bg-color: #f4f4f4;
+    --hover-color: #f1c40f;
+    --text-color: #333;
+    --white: #ffffff;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --card-shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================================
+   HEADER STYLES
+   ============================================ */
+.main-header {
+    background-color: var(--header-color);
+    color: var(--white);
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.group-name {
+    font-size: 1.5rem;
+    color: var(--hover-color);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* ============================================
+   NAVIGATION STYLES
+   ============================================ */
+.main-nav {
+    background-color: var(--nav-color);
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-link {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: var(--hover-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+.nav-link.active {
+    background-color: rgba(241, 196, 15, 0.2);
+}
+
+.nav-link.active::after {
+    width: 80%;
+}
+
+/* ============================================
+   MAIN CONTENT STYLES
+   ============================================ */
+.main-content {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* ============================================
+   INTERESTS HEADER STYLES
+   ============================================ */
+.interests-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.interests-header h2 {
+    font-size: 2.5rem;
+    color: var(--header-color);
+    margin-bottom: 10px;
+}
+
+.interests-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* ============================================
+   INTERESTS GRID STYLES
+   ============================================ */
+.interests-section {
+    margin-bottom: 50px;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Interest Card Styles */
+.interest-card {
+    background-color: var(--white);
+    padding: 35px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.interest-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.interest-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--header-color), var(--hover-color));
+}
+
+.interest-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.interest-card:hover .interest-icon {
+    transform: scale(1.2);
+}
+
+.interest-card h3 {
+    font-size: 1.4rem;
+    color: var(--header-color);
+    margin-bottom: 15px;
+}
+
+.interest-description {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Interest Tags */
+.interest-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tag {
+    background-color: var(--bg-color);
+    color: var(--header-color);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background-color: var(--header-color);
+    color: var(--white);
+}
+
+/* ============================================
+   DREAMS SECTION STYLES
+   ============================================ */
+.dreams-section {
+    margin-bottom: 30px;
+}
+
+.dreams-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--header-color);
+    margin-bottom: 30px;
+}
+
+.dreams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Dream Card Styles */
+.dream-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid var(--hover-color);
+}
+
+.dream-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow-hover);
+    border-left-color: var(--header-color);
+}
+
+.dream-icon-large {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.dream-card h3 {
+    font-size: 1.2rem;
+    color: var(--header-color);
+    margin-bottom: 12px;
+}
+
+.dream-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ============================================
+   FOOTER STYLES
+   ============================================ */
+.main-footer {
+    background-color: var(--header-color);
+    color: var(--white);
+    padding: 25px 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   SCROLL TO TOP BUTTON
+   ============================================ */
+.scroll-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: var(--header-color);
+    color: var(--white);
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--card-shadow);
+}
+
+.scroll-top-btn:hover {
+    background-color: var(--hover-color);
+    color: var(--header-color);
+    transform: translateY(-3px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.interest-card,
+.dream-card {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Stagger animation */
+.interest-card:nth-child(1) { animation-delay: 0.1s; }
+.interest-card:nth-child(2) { animation-delay: 0.2s; }
+.interest-card:nth-child(3) { animation-delay: 0.3s; }
+.interest-card:nth-child(4) { animation-delay: 0.4s; }
+
+.dream-card:nth-child(1) { animation-delay: 0.1s; }
+.dream-card:nth-child(2) { animation-delay: 0.2s; }
+.dream-card:nth-child(3) { animation-delay: 0.3s; }
+.dream-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media screen and (max-width: 768px) {
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .group-name {
+        font-size: 1.2rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        padding: 12px 20px;
+        text-align: center;
+    }
+
+    .interests-header h2 {
+        font-size: 2rem;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .interest-card {
+        padding: 25px 20px;
+    }
+
+    .interest-icon {
+        font-size: 3rem;
+    }
+
+    .dreams-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dreams-section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-content {
+        padding: 20px 15px;
+    }
+
+    .interest-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .interest-description {
+        font-size: 0.9rem;
+    }
+
+    .dream-card {
+        padding: 20px;
+    }
+
+    .dream-card h3 {
+        font-size: 1.1rem;
+    }
+}

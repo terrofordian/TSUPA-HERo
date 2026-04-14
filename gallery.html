@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsupa Hero - Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Welcome to Our Group Portfolio</h1>
+            <p class="group-name">Tsupa Hero</p>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About Me</a></li>
+            <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+            <li><a href="interest.html" class="nav-link">Interests</a></li>
+            <li><a href="project.html" class="nav-link">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <!-- Gallery Header -->
+        <section class="gallery-header">
+            <h2>Our Gallery</h2>
+            <p>Explore our collection of photos and memories</p>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section">
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" onclick="openModal('images/gallery1.jpg', 'Team Member Photo 1')">
+                    <img src="images/gallery1.jpg" alt="Gallery Photo 1">
+                    <div class="gallery-overlay">
+                        <span class="view-icon">🔍</span>
+                        <p>Click to view</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" onclick="openModal('images/gallery2.jpg', 'Team Member Photo 2')">
+                    <img src="images/gallery2.jpg" alt="Gallery Photo 2">
+                    <div class="gallery-overlay">
+                        <span class="view-icon">🔍</span>
+                        <p>Click to view</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" onclick="openModal('images/gallery3.jpg', 'Team Member Photo 3')">
+                    <img src="images/gallery3.jpg" alt="Gallery Photo 3">
+                    <div class="gallery-overlay">
+                        <span class="view-icon">🔍</span>
+                        <p>Click to view</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" onclick="openModal('images/gallery4.jpg', 'Team Member Photo 4')">
+                    <img src="images/gallery4.jpg" alt="Gallery Photo 4">
+                    <div class="gallery-overlay">
+                        <span class="view-icon">🔍</span>
+                        <p>Click to view</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" onclick="openModal('images/gallery5.jpg', 'Team Member Photo 5')">
+                    <img src="images/gallery5.jpg" alt="Gallery Photo 5">
+                    <div class="gallery-overlay">
+                        <span class="view-icon">🔍</span>
+                        <p>Click to view</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" onclick="openModal('images/gallery6.jpg', 'Team Member Photo 6')">
+                    <img src="images/gallery6.jpg" alt="Gallery Photo 6">
+                    <div class="gallery-overlay">
+                        <span class="view-icon">🔍</span>
+                        <p>Click to view</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 7 -->
+                <div class="gallery-item" onclick="openModal('images/gallery7.jpg', 'Team Member Photo 7')">
+                    <img src="images/gallery7.jpg" alt="Gallery Photo 7">
+                    <div class="gallery-overlay">
+                        <span class="view-icon">🔍</span>
+                        <p>Click to view</p>
+                    </div>
+                </div>
+<!-- Gallery Item 8 -->
+                <div class="gallery-item" onclick="openModal('images/gallery8.jpg', 'Team Member Photo 8')">
+                    <img src="images/gallery8.jpg" alt="Gallery Photo 7">
+                    <div class="gallery-overlay">
+                        <span class="view-icon">🔍</span>
+                        <p>Click to view</p>
+                    </div>
+                </div>
+
+                         </div>
+        </section>
+    </main>
+
+    <!-- Image Modal / Lightbox -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Enlarged view">
+            <p id="modalCaption" class="modal-caption"></p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Tsupa Hero. All Rights Reserved.</p>
+            <p>University of the Cordilleras | Computer Science Students</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Go to top">↑</button>
+
+    <!-- JavaScript File -->
+    <script src="js/script.js"></script>
+</body>
+</html>

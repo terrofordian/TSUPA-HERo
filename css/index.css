@@ -146,9 +146,9 @@ body {
 .group-image {
     width: 100%;
     max-width: 300px;
-    height: object-fit: contain;
-    object-fit: cover;
-    border-radius: 50%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 100%;
     border: 5px solid var(--header-color);
     box-shadow: var(--card-shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;

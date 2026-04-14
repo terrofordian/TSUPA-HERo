@@ -146,7 +146,7 @@ body {
 .group-image {
     width: 100%;
     max-width: 300px;
-    height: 300px;
+    height: object-fit: contain;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid var(--header-color);

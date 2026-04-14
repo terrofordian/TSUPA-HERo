@@ -190,14 +190,14 @@ body {
 /* Member Photo */
 .member-photo {
     width: 100%;
-    height: 200px;
+    height: 100px;
     overflow: hidden;
     background: linear-gradient(135deg, var(--header-color), var(--nav-color));
 }
 
 .member-photo img {
     width: 100%;
-    height: 200%;
+    height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }

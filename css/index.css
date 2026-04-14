@@ -132,22 +132,26 @@ body {
 }
 
 .profile-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  gap: 50px; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
 }
 
-.profile-photo {
-    flex: 0 0 300px;
+
+.profile-img {
+  flex-shrink: 0;
+  width: 300px;
 }
 
 .group-image {
     width: 100%;
     max-width: 300px;
     height: 300px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 100%;
     border: 5px solid var(--header-color);
     box-shadow: var(--card-shadow);
